@@ -1,0 +1,331 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Portfolio</title>
+
+    <style>
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            font-family: 'Segoe UI', sans-serif;
+
+            background: linear-gradient(135deg, #eaf1ff, #f4f8ff);
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 25px;
+
+        }
+
+        .container {
+
+            max-width: 1000px;
+
+            width: 100%;
+
+        }
+
+        .header {
+
+            text-align: center;
+
+            margin-bottom: 45px;
+
+        }
+
+        .header h1 {
+
+            color: #233d65;
+
+            font-size: 40px;
+
+            margin-bottom: 12px;
+
+        }
+
+        .header p {
+
+            color: #718096;
+
+            font-size: 16px;
+
+        }
+
+        .header .label {
+
+            color: #315f9f;
+
+            background: #dce8ff;
+
+            padding: 8px 20px;
+
+            border-radius: 30px;
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+        }
+
+        .cards {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+
+        }
+
+        .card {
+
+            background: white;
+
+            padding: 30px 22px;
+
+            border-radius: 20px;
+
+            text-align: center;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+            transition: 0.3s;
+
+        }
+
+        .card:hover {
+
+            transform: translateY(-10px);
+
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+
+        }
+
+        .icon {
+
+            font-size: 50px;
+
+            margin-bottom: 20px;
+
+        }
+
+        .card h2 {
+
+            color: #263b5d;
+
+            font-size: 20px;
+
+            margin-bottom: 15px;
+
+        }
+
+        .card p {
+
+            color: #718096;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+
+            min-height: 70px;
+
+        }
+
+        .btn {
+
+            display: inline-block;
+
+            width: 100%;
+
+            margin-top: 20px;
+
+            padding: 13px;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            color: white;
+
+            background: #315f9f;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+
+        }
+
+        .btn:hover {
+
+            opacity: 0.8;
+
+        }
+
+        .green {
+
+            background: #27856c;
+
+        }
+
+        .orange {
+
+            background: #d47a35;
+
+        }
+
+        footer {
+
+            text-align: center;
+
+            margin-top: 40px;
+
+            color: #8996a9;
+
+            font-size: 13px;
+
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .cards {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .header h1 {
+
+                font-size: 30px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <span class="label">MY PORTFOLIO</span>
+
+            <h1>Welcome to My Website</h1>
+
+            <p>Silakan pilih dokumen yang ingin kamu lihat.</p>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icon">📩</div>
+
+                <h2>Surat Lamaran Kerja</h2>
+
+                <p>
+
+                    Dokumen surat lamaran kerja
+
+                    sebagai persyaratan melamar pekerjaan.
+
+                </p>
+
+                <a href="https://canva.link/zfs05xohgtkcz4p"
+
+                   target="_blank" class="btn">
+
+                    Lihat Surat
+
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icon">💻</div>
+
+                <h2>CV Website</h2>
+
+                <p>
+
+                    Curriculum Vitae dalam bentuk website
+
+                    yang berisi informasi dan profil diri.
+
+                </p>
+
+                <a href="https://bayamhijau294-sudo.github.io/salwa3/"
+
+                   target="_blank" class="btn green">
+
+                    Buka CV Website
+
+                </a>
+
+            </div>
+
+            <div class="card">
+
+                <div class="icon">📊</div>
+
+                <h2>CV PPT</h2>
+
+                <p>
+
+                    Curriculum Vitae dalam bentuk
+
+                    presentasi PowerPoint.
+
+                </p>
+
+                <a href="https://canva.link/28pbmqmr4o6lhrz"
+
+                   target="_blank" class="btn orange">
+
+                    Lihat CV PPT
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <footer>
+
+            <p>©️ 2026 My Personal Portfolio | Created by Salwa</p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
